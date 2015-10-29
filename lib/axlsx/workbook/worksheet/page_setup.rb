@@ -216,8 +216,8 @@ module Axlsx
     # @option options [Integer] width The number of pages to fit this worksheet on horizontally. Default 999
     # @option options [Integer] height The number of pages to fit this worksheet on vertically. Default 999
     def fit_to(options={})
-      self.fit_to_width = options[:width] || 999
-      self.fit_to_height = options[:height] || 999
+      self.fit_to_width = options[:width] || 0
+      self.fit_to_height = options[:height] || 0
       [@fit_to_width, @fit_to_height]
     end
 
